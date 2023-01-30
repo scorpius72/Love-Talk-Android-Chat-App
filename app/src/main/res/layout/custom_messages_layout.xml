@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_image"
+        />
+
+    <TextView
+        android:id="@+id/receiver_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:background="@drawable/receiver_messages_layout"
+        android:text="receiver messages here"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/receiver_message_text_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:background="@drawable/receiver_messages_layout"
+        android:text="receiver messages here"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/receiver_message_text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:layout_below="@+id/receiver_message_text"
+        android:background="@drawable/receiver_message_time_layout"
+        android:text="receiver messages here"
+        android:padding="3dp"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+
+    <ImageView
+        android:id="@+id/message_sender_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/image_loading"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/sender_messsage_image_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/message_sender_image_view"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sender_message_time_layout"
+        android:text="sender messages time"
+        android:textSize="8sp"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+    <ImageView
+        android:id="@+id/message_receiver_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/image_loading"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/receiver_message_image_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:layout_below="@+id/message_receiver_image_view"
+        android:background="@drawable/receiver_message_time_layout"
+        android:text="receiver messages here"
+        android:padding="3dp"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/sender_messsage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sender_messages_layout"
+        android:text="sender messages"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:paddingEnd="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/sender_messsage_text_max"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sender_messages_layout"
+        android:text="sender messages"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:paddingEnd="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/sender_messsage_text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/sender_messsage_text"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sender_message_time_layout"
+        android:text="sender messages time"
+        android:textSize="8sp"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+
+</RelativeLayout>
